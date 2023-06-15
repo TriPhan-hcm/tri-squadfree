@@ -41,15 +41,16 @@
     //   el.addEventListener('scroll', listener)
     // }
 
-    window.onscroll = function() {
-        var scroll = window.scrollY;
-        if (scroll >= 500) {
-            window.alert('PhanHoangTri');
-        } else {
-            window.alert('Tri');
-        }
-    };
+    window.onscroll = scrolled;
 
+
+    function scrolled() {
+        var height = $(window).scrollTop();
+        if (height > 500) {
+            alert('scroll-tri');
+        }
+
+    }
     /**
      * Navbar links active state on scroll
      */
