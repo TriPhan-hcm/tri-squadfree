@@ -42,7 +42,7 @@
     // }
 
     window.onscroll = function() {
-        var scroll = window.scrollX;
+        var scroll = window.scrollY;
         if (scroll >= 500) {
             window.alert('PhanHoangTri');
         } else {
@@ -101,7 +101,7 @@
             }
         }
         window.addEventListener('load', headerScrolled)
-        onscroll(document, headerScrolled)
+            // onscroll(document, headerScrolled)
     }
 
     /**
@@ -117,7 +117,7 @@
             }
         }
         window.addEventListener('load', toggleBacktotop)
-        onscroll(document, toggleBacktotop)
+            // onscroll(document, toggleBacktotop)
     }
 
     /**
