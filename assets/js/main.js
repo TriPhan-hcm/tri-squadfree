@@ -45,7 +45,7 @@
 
 
     function scrolled() {
-        var height = $(window).scrollTop();
+        var height = window.scrollY;
         if (height > 500) {
             alert('scroll-tri');
         }
